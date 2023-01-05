@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body{
+            font-family: 'work Sans', Arial, Helvetica, sans-serif; /*O site primeiro vai procurar a fonte Arial, depois a Helvética e por último uma fonte sem serifa. Isso é uma safe combination*/
+            
+            font-size: 1em; /*16px = tamanho padrão das fontes (geralmente 16px = 1em*/
+            /*medidas absolutas: cm, mm, in, px, pt(ponto) e pc(paica)*/
+            /*medidas relativas: em, ex, rem, vw(viewport), vh e %*/
+        }
+
+        h1{
+            /*font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;*/
+            /* Shorthand (mãozinha) -> recurso para condensar todas as características da fonte em uma linha de código
+            a ordem deve ser: font-style -> font-weight -> font-size -> font-family */
+            font: italic bolder 3em 'work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo cum ducimus perferendis harum, laborum minus deserunt tempore nobis quisquam, eaque, a expedita sequi. Cum laboriosam tempore esse eligendi, asperiores nemo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa iste, doloremque quas cumque a beatae pariatur velit laudantium accusamus repudiandae magnam at obcaecati temporibus, id iure tenetur dolore, veritatis placeat.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt nemo iure blanditiis veritatis asperiores vitae, voluptatum hic commodi possimus. Maiores id doloremque dolores quibusdam eum aspernatur voluptatibus voluptatem soluta nihil.</p>
+    <h2>Subtítulo do exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui perspiciatis unde voluptatibus aliquid necessitatibus? Non iste mollitia eos? Adipisci praesentium voluptatum quae inventore recusandae nostrum cupiditate autem, ad doloribus possimus. lore</p>
+</body>
+</html>
