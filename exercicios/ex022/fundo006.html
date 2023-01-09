@@ -4,20 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh;
+            /*
             background-color: black; /*mesmo quando o site tiver apenas imagens é bom colocar uma cor de fundo pois quando carregado o texto é o primeiro a mostrar e caso o usuário tenha uma internet lenta ele ainda consegue consumir o conteúdo com a ajuda da cor de fundo*/
-            background-image: url("imagens/wallpaper002.jpg");
+            /*background-image: url("imagens/wallpaper002.jpg");
             background-position: center center;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat;*/
             background-size: cover;/*largura e altura*/ /*contain faz com que a imagem fique 100% exibida. cover cobre a tela inteira (100% da viewport) para fazer caber a imagem inteira*/
+            /*background-attachment: fixed;/*Background attachment é um comando qe faz o fundo ficar preso ao conteúdo. Usar fixed faz com que o fundo não mexa quando rolar o conteúdo, já o scroll faz com que o fundo se mova junto com o conteúdo*/
+            
+
+            /*shorthand background - color > image > position > size > attachment*/ /*size está na regra de shorthand mas não funciona ainda*/
+            background: black url("imagens/wallpaper002.jpg") center center no-repeat fixed;
         }
         
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -30,7 +36,18 @@
         <h1>
             Teste de imagem de fundo
         </h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nihil, architecto velit ex tempore, aliquam rem, quod ratione fuga quidem molestiae ab tenetur temporibus dignissimos. Distinctio fuga laborum quis possimus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolor ex suscipit. Minus, dignissimos ex. Commodi harum accusantium quo illo, deserunt voluptates asperiores sit aliquam exercitationem voluptas ad laudantium et.</p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo nihil, architecto velit ex tempore, aliquam rem, quod ratione fuga quidem molestiae ab tenetur temporibus dignissimos. Distinctio fuga laborum quis possimus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolor ex suscipit. Minus, dignissimos ex. Commodi harum accusantium quo illo, deserunt voluptates asperiores sit aliquam exercitationem voluptas ad laudantium et. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio officia, pariatur sint tempore fugit nisi. Eum et, ipsa voluptates odit consectetur quo dicta blanditiis reprehenderit dolores ea praesentium a nostrum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore atque officiis suscipit eligendi. Ex tempore commodi modi eum, consequuntur illum, perferendis magni eius quibusdam iste impedit accusamus suscipit minus eligendi.
+        </p>
+        <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit quia minus ad consequuntur voluptate possimus unde quasi a. Sit placeat molestias velit fuga odit unde quo accusamus dolore illo laudantium!
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam alias ex sed provident facilis soluta? Ab sunt, amet nam porro quam eveniet ut iste qui culpa ad hic soluta reprehenderit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aperiam illo aut esse molestiae possimus dignissimos in expedita provident, cupiditate dicta deleniti voluptas totam eos iusto natus, doloribus quis commodi!
+        </p>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit, quas ratione voluptatem voluptas non iusto fugiat vero explicabo suscipit ut veniam totam accusamus quisquam quasi saepe assumenda quod! Amet, ipsa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex iste aperiam voluptates ad impedit provident, quia molestiae officiis illo, sunt adipisci delectus? Id amet debitis deserunt ipsa a reprehenderit explicabo.
+        </p>
     </main>
 </body>
 </html>
