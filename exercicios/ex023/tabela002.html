@@ -35,6 +35,14 @@
         td.num {
             text-align: right;
         }
+
+        tbody > tr:nth-child(odd) {/*efeito zebrado, 2n está pulando de 2 em duas linhas. Pode ser escrito tb o "odd" = impar ou "even" = par*/
+            background-color: lightgray;
+        }
+        
+        tbody > tr:nth-child(even) {
+            background-color: white;
+        }
     </style>
 </head>
 <body>
