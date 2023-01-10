@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--
+        ANATOMIA PARA TABELAS GRANDES
+        TABLE
+            CAPTION - legenda
+            THEAD
+                TR, TD, TH (usar th para títulos na tabela) (usar td para dados na tabela)
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH
+    -->
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">49.295.747</td>
+            </tr>
+            <tr>
+                <td>Recife</td>
+                <td class="num">23.601.254</td>
+            </tr>
+            <tr>
+                <td>Belo Horizonte</td>
+                <td class="num">21.069.799</td>
+            </tr>
+            <tr>
+                <td>Fortaleza</td>
+                <td class="num">49.295.747</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.296.239</td>
+            </tr>
+            <tr>
+                <td>Salvador</td>
+                <td class="num">14.471.227</td>
+            </tr>
+            <tr>
+                <td>Curitiba</td>
+                <td class="num">11.654.092</td>
+            </tr>
+            <tr>
+                <td>Brasília</td>
+                <td class="num">11.649.359</td>
+            </tr>
+            <tr>
+                <td>Porto Alegre</td>
+                <td class="num">11.293.956</td>
+            </tr>
+            <tr>
+                <td>Belém</td>
+                <td class="num">9.335.660</td>
+            </tr>
+            <tr>
+                <td>Goiânia</td>
+                <td class="num">8.269.552</td>
+            </tr>
+            <tr>
+                <td>Florianópolis</td>
+                <td class="num">7.138.738</td>
+            </tr>
+            <tr>
+                <td>Manaus</td>
+                <td class="num">4.490.260</td>
+            </tr>
+            <tr>
+                <td>Vitória</td>
+                <td class="num">4.468.927</td>
+            </tr>
+            <tr>
+                <td>Campinas</td>
+                <td class="num">4.396.180</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <th class="num"><strong>0000</strong></th>
+            </tr>
+
+        </tfoot>
+    </table>
+</body>
+</html>
